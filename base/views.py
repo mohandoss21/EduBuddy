@@ -153,7 +153,7 @@ def deleteMessage(request,pk):
   
  
 @login_required(login_url='login') 
-def updateUser(request):
+def updateUser(request,pk):
   user = request.user
   form= UserForm(instance = user)
   context={'form':form}

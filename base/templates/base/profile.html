@@ -13,7 +13,7 @@
           <div class="profile__avatar">
             <div class="avatar avatar--large active">
               <a href=
-              "{% url 'profile'%}"><img src="https://randomuser.me/api/portraits/men/11.jpg" /></a>
+              "{% url 'user-profile' user.id%}"><img src="https://randomuser.me/api/portraits/men/11.jpg" /></a>
             </div>
           </div>
           <div class="profile__info">
@@ -22,7 +22,7 @@
 
             {% if request.user == user %}
 
-            <a href="{% url 'update-user' %}" class="btn btn--main btn--pill">Edit Profile</a>
+            <a href="{% url 'update-user' user.id %}" class="btn btn--main btn--pill">Edit Profile</a>
             {% endif %}
           </div>
           <div class="profile__about">
