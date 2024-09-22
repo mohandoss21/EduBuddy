@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-ASGI_APPLICATION = 'studybuddy.asgi.application'
+#ASGI_APPLICATION = 'studybuddy.asgi.application'
 
 # Add the Channels layer backend (for managing connections, like a chat room)
 CHANNEL_LAYERS = {
