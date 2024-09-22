@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)@--i@y@g)!9epwv3ybwt)hgz^$oojldbz709*-6phw^-ck$u*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['MohandossV.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','MohandossV.pythonanywhere.com']
 
 #ASGI_APPLICATION = 'studybuddy.asgi.application'
 
