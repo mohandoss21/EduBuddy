@@ -27,7 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['MohandossV.pythonanywhere.com']
 
+ASGI_APPLICATION = 'studybuddy.asgi.application'
 
+# Add the Channels layer backend (for managing connections, like a chat room)
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',  # For production, you might use Redis
+    },
+}
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'base.apps.BaseConfig',
+    'channels',
 ]
 
 MIDDLEWARE = [
